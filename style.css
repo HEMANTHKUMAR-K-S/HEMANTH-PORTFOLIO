@@ -422,8 +422,6 @@ padding-top: 10px;
 .footer-content .socials li a:hover {
   color: #09bdff;
 }
-
-/* Responsive design */
 @media (max-width: 600px) {
   .contact-section {
     padding: 30px;
@@ -564,7 +562,6 @@ padding-top: 10px;
   .about-container {
     padding: 30px 10px;
     margin-bottom: 90px;
-    /* height: 55vh; */
 }
 
 .about-container h1{
@@ -577,8 +574,9 @@ padding-top: 10px;
     font-size: 1em;
 }
 .skills ul li::before {
-    font-size: 1em;
+    font-size: 1.1em;
 }
+
 .about-container p {
     font-size: 1em;
 }
