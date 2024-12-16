@@ -564,11 +564,20 @@ padding-top: 10px;
   .about-container {
     padding: 30px 10px;
     margin-bottom: 90px;
-    height: 55vh;
+    /* height: 55vh; */
 }
 
-.about-container h1 {
+.about-container h1{
     font-size: 1.3em;
+}
+.skills h2 {
+    font-size: 1.3rem;
+}
+.skills ul li {
+    font-size: 1em;
+}
+.skills ul li::before {
+    font-size: 1em;
 }
 .about-container p {
     font-size: 1em;
