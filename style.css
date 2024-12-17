@@ -4,7 +4,6 @@ body {
   padding: 0;
   background-color: #030303;
 }
-
 .profile {
   display: flex;
   justify-content: space-between;
@@ -23,17 +22,10 @@ body {
   padding: 10px;
 }
 
-.photo {
+/* .photo {
   margin: 30px;
 
-}
-
-.photo img {
-  width: 200px;
-  height: 200px;
-  border-radius: 70%;
-  object-fit: cover;
-}
+} */
 
 .photo h1 {
   font-size: 24px;
@@ -50,14 +42,18 @@ p span {
   font-size: 18px;
 }
 
-.photo img:hover {
+/* .photo img:hover {
   filter: drop-shadow(1px 10px 15px rgb(241, 241, 241));
-}
+} */
 
 /* Typewriter container styles */
 .typewriter-container {
   font-size: 24px;
   color: #2de7f8;
+}
+.typewriter::before {
+  content: 'WEB DEVELOPER';
+  animation: changeText 5s infinite;
 }
 
 @keyframes changeText {
@@ -77,12 +73,6 @@ p span {
     content: 'WEB DEVELOPER';
   }
 }
-
-.typewriter::before {
-  content: 'WEB DEVELOPER';
-  animation: changeText 5s infinite;
-}
-
 .about-me h3 {
   font-size: 24px;
   color: #ffffff;
@@ -100,28 +90,28 @@ p span {
 }
 
 /* Download button styling */
-.download-btn {
+.view-btn {
+  justify-content: space-between;
   display: inline-flex;
   align-items: center;
   padding: 10px;
   background-color: #2dc3ec;
-  /* Button background color */
   color: white;
-  /* Text and icon color */
   font-size: 18px;
   font-weight: bold;
   border-radius: 7px;
   text-decoration: none;
   box-shadow: 0 4px 10px rgba(247, 170, 37, 0.2);
-  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  transition: background-color , transform 0.3 ease, box-shadow 0.3s ease;
 }
 
-.download-btn i {
-  margin-right: 8px;
+.view-btn i {
+  margin-left: 5px;
   font-size: 20px;
+  
 }
-
-.download-btn:hover {
+.view-btn:hover {
+  transform: scalex(1.05);
   background-color: #efba0c;
   box-shadow: 0 6px 15px rgba(230, 12, 12, 0.3);
 }
@@ -135,7 +125,6 @@ p span {
   color: white;
   top: 20px;
   margin: 7px;
-  /* right: px; */
 }
 
 .navbar {
@@ -342,7 +331,7 @@ p span {
   align-items: center;
   text-align: center;
   margin: 10px;
-  padding: 10px;
+  /* padding: 10px; */
   overflow: hidden;
 justify-content: center;
 }
@@ -364,6 +353,7 @@ justify-content: center;
   color: white;
   font-size: 16px;
   margin: 10px;
+  padding: 5px;
 }
 
 .project-card a {
@@ -375,7 +365,7 @@ justify-content: center;
   font-size: 18px;
   margin: 10px;
   text-decoration: none;
-padding-top: 10px;
+  padding-top: 10px;
   border-radius: 3px;
 }
 
@@ -585,11 +575,19 @@ padding-top: 10px;
 }
 .project-card{
   width: 200px;
+
 }
 .project-card a{
   width: 50%;
-  height:30px ;
+  height:20px ;
   font-size: 14px; 
-  padding: 5px;
+ 
+}
+.project-card img {
+  width: 200px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  height: 150px;
+  object-fit: cover;
 }
 }
