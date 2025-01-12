@@ -20,6 +20,10 @@ body {
   text-align: center;
   margin: 10px;
   padding: 10px;
+  background-image: url('images/circle-scatter-haikei.png');
+  background-repeat: no-repeat;
+  
+  background-size: cover;
 }
 
 /* .photo {
@@ -102,7 +106,8 @@ p span {
   border-radius: 7px;
   text-decoration: none;
   box-shadow: 0 4px 10px rgba(247, 170, 37, 0.2);
-  transition: background-color , transform 0.3 ease, box-shadow 0.3s ease;
+  transition: background-color, transform 0.3s ease, box-shadow 0.3s ease;
+  border: none; 
 }
 
 .view-btn i {
@@ -323,7 +328,7 @@ p span {
 .project-card {
   width: 300px;
   height: 500px;
-  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2), 0 2px 15px rgba(255, 255, 255, 0.1);
+  /* box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2), 0 2px 15px rgba(255, 255, 255, 0.1); */
   display: flex;
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
@@ -334,6 +339,10 @@ p span {
   /* padding: 10px; */
   overflow: hidden;
 justify-content: center;
+background-image:url('images/symbol-scatter-haikei.png');
+/* background-repeat: no-repeat; */
+background-size: cover;
+
 }
 
 .project-card img {
@@ -342,6 +351,7 @@ justify-content: center;
   border-top-right-radius: 12px;
   height: 250px;
   object-fit: cover;
+  background-size: cover;
 }
 .project-card h3 {
   color: white;
